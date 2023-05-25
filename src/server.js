@@ -19,10 +19,10 @@ const server = http.createServer((req, res) => {
       name: 'Mateus Barbosa',
       email: "mateus.bm13@gmail.com"
     })
-    return res.end('Criação de usuário')
+    return res.writeHead(201).end()
   }
 
-  return res.end('Está funcionando')
+  return res.writeHead(404).end()
 })
 
 //O servidor irá ficar olhando a porta 3333
