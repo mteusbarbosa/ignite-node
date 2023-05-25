@@ -5,7 +5,7 @@ import http from 'node:http'
 //req - os dados que estão entrando 
 //res - as respostas do servidor
 const server = http.createServer((req, res) => {
-  return res.end('Hello World')
+  return res.end('Está funcionando')
 })
 
 //O servidor irá ficar olhando a porta 3333
